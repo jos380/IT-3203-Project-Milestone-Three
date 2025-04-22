@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WWW - Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="quiz.js"></script>
+</head>
+<body>
+    <!-- Nav Menu -->
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="timeline.html">Timeline</a></li>
+            <li><a href="creator.html">Creator</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="references.html">References</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <h1>Test Your Web Knowledge</h1>
+    
+        <!-- Introduction -->
+        <div class="section">
+            <p>How well do you understand the World Wide Web and its history? Take this quiz to assess your knowledge after exploring our website.</p>
+            <p>The quiz contains multiple-choice questions, a fill-in-the-blank question, and a multiple-selection question. Good luck!</p>
+        </div>
+
+        <!-- Container -->
+        <div class="quiz-container">
+            <form id="quiz-form">
+                <!-- Question 1: Radio -->
+                <div class="quiz-question">
+                    <h3>1. Who is credited with inventing the World Wide Web?</h3>
+                    <div class="quiz-options">
+                        <label class="option-label">
+                            <input type="radio" name="q1" value="a"> Steve Jobs
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q1" value="b"> Tim Berners-Lee
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q1" value="c"> Bill Gates
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q1" value="d"> Mark Zuckerberg
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 2: Radio -->
+                <div class="quiz-question">
+                    <h3>2. In what year was the World Wide Web created?</h3>
+                    <div class="quiz-options">
+                        <label class="option-label">
+                            <input type="radio" name="q2" value="a"> 1985
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q2" value="b"> 1989
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q2" value="c"> 1995
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q2" value="d"> 2000
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 3: Radio -->
+                <div class="quiz-question">
+                    <h3>3. What does HTML stand for?</h3>
+                    <div class="quiz-options">
+                        <label class="option-label">
+                            <input type="radio" name="q3" value="a"> Hyperlinks and Text Markup Language
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q3" value="b"> Hyper Text Markup Language
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q3" value="c"> Home Tool Markup Language
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q3" value="d"> Hypertext Transfer Mode Language
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 4: Write inside the blank -->
+                <div class="quiz-question">
+                    <h3>4. Tim Berners-Lee was working at ________ when he invented the World Wide Web.</h3>
+                    <input type="text" name="q4" class="fill-blank-input" placeholder="Type your answer here">
+                </div>
+
+                <!-- Question 5: Multiple selection -->
+                <div class="quiz-question">
+                    <h3>5. Which of the following were created or standardized during the evolution of the Web? (Select all that apply)</h3>
+                    <div class="quiz-options">
+                        <label class="option-label">
+                            <input type="checkbox" name="q5" value="a"> CSS
+                        </label>
+                        <label class="option-label">
+                            <input type="checkbox" name="q5" value="b"> JavaScript
+                        </label>
+                        <label class="option-label">
+                            <input type="checkbox" name="q5" value="c"> SMTP
+                        </label>
+                        <label class="option-label">
+                            <input type="checkbox" name="q5" value="d"> HTTP
+                        </label>
+                    </div>
+                </div>
+
+                <button type="button" id="submit-quiz" class="quiz-btn">Submit Quiz</button>
+                <button type="button" id="restart-quiz" class="quiz-btn" style="display: none;">Restart Quiz</button>
+            </form>
+
+            <!-- Results -->
+            <div id="results-container" class="results-container">
+                <h3>Quiz Results</h3>
+                <div id="score-display"></div>
+                <div id="detailed-results"></div>
+                <div id="pass-fail"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>IT 3203 Milestone Project</p>
+    </footer>
+</body>
+</html>
